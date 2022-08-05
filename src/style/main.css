@@ -1,0 +1,201 @@
+:root {
+    --blackish: #262626;
+    --blue: #0095f6;
+    --darkBlue: #00376b;
+    --grey: #acacac;
+    --greyish: #f7f7f7;
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: var(--blackish);
+    background-color: var(--greyish);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Phones section */
+
+@media (max-width: 874px) {
+    .phone-slideshow {
+        display: none;
+    }
+
+    .slide-img {
+        display: none;
+    }
+}
+
+.phone-slideshow {
+    position: relative;
+}
+
+.slide-img {
+    position: absolute;
+    left: 156px;
+    top: 25px;
+}
+
+/* Login form */
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1.5em;
+    margin-bottom: 2em;
+}
+
+.form-wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.8rem;
+    padding: 1.5em;
+    border: rgba(0, 0, 0, 0.20) 1px solid;
+    background-color: var(--white);
+}
+
+.signup-wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.8rem;
+    padding: 1.5em;
+    border: rgba(0, 0, 0, 0.20) 1px solid;
+    background-color: var(--white);
+}
+
+.input-area {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 1em;
+}
+
+input {
+    margin-top: 0.4em;
+    padding: 0.8em;
+    background-color: var(--greyish);
+    border: var(--grey) solid 0.1em;
+    border-radius: 0.2em;
+    outline: none;
+}
+
+input:focus {
+    border: rgba(0, 0, 0, 0.50) solid 0.1em;
+}
+
+#login-btn {
+    margin-top: 1em;
+    padding: 0.6em;
+    border: none;
+    background-color: var(--blue);
+    color: var(--white);
+    font-weight: bold;
+    border-radius: 0.3em;
+    cursor: pointer;
+}
+
+#login-btn:disabled {
+    background-color: rgba(0, 149, 246, .3)
+}
+
+
+.divider {
+    width: 95%;
+    height: 30px;
+    text-align: center;
+    display: flex;
+}
+
+.divider-line {
+    width: 46.665%;
+    padding: 30px 10px;
+    opacity: 50%;
+}
+
+.divider-text {
+    width: 6.67%;
+    padding: 20px 0;
+    font-weight: 500;
+    color: var(--grey);
+}
+
+.forgot-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+}
+
+
+#fb-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: var(--darkBlue);
+    font-weight: 600;
+    background-color: transparent;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+#facebook-logo {
+    margin-right: 0.5em;
+}
+
+#forgot-link {
+    padding: 0.5em;
+    color: var(--darkBlue);
+    font-size: 0.8rem;
+}
+
+#signup-link {
+    color: var(--blue);
+    font-weight: 600;
+}
+
+/* Download area */
+
+.download-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    margin-top: 0.5em;
+}
+
+.download-btn {
+    max-width: 134px;
+    padding: 0.2em;
+    margin-top: 1em;
+}
+
+#instagram-logo {
+    max-width: 175px;
+}
+
+#facebook-logo {
+    max-width: 16px;
+}
